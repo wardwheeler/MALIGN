@@ -1,0 +1,27 @@
+This was updated and file changed 1/26/97
+	
+This directory contains:
+	read.me      --- this file
+	malignpc.exe --- pentium pc version of malign
+	malign.exe   --- 386 and 486 version of malign
+	dos4gw.exe   --- dos extender for malignpc.exe -> must be in DOS path
+	test.seq     --- sample sequence file
+	test.grp     --- sample groups file
+	test.mln     --- sample parameter file
+	malign.txt   --- ascii version of outdated documentation, sorry
+	malign_sun   --- Sun version of malign (this one works)
+	malign_hp    --- HPUX version of malign
+        malign_lin   --- Linux version of malign
+	malign.tar   --- tar file for malign source for unix or pcs
+				tar -xvf malign.tar     -> for extraction
+
+	The command line :
+		malignpc test.mln < test.seq > test.out 
+	will get you going
+
+	malign.tar contains the parallel (and sequential) code and makefile for PVM version 3
+	parallel code.  The align3.h file must be set correctly for this to work.  Including linking the pvm libs.
+	It should be obvious how to do this.
+	Note:  for SUN compilation the RAND_MAX option must be set by hand to 2**31 -1 in align3.h if gcc compiler is used
+
+	If you are so inclined, the official license fee is US$50.  I'm not going to chase anyone though.

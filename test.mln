@@ -1,0 +1,16 @@
+internal 3
+changecost 1
+leading 2
+trailing 2
+score 7
+aspr
+contig
+build
+interleave
+hengap
+keepaligns 50
+keeptrees 100
+linelength 60
+time
+phylotime
+outorder in
